@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 1400px;
+}
+
+.nav {
+    margin: 0 auto;
+    width: 940px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0 50px 0;
+}
+
+.site-nav {
+    display: flex;
+    flex-wrap: wrap;
+    width: 480px;
+    list-style: none;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.nav-item {
+    display: block;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #313131;
+    transition: color 200ms linear;
+}
+
+.site-logo {
+    margin: 0;
+}
+
+.nav-item:hover {
+    color: #fed136;
+}
+
+.services {
+    margin: 0 auto;
+    width: 940px;
+    padding: 80px 0 120px 0;
+}
+
+.title-services {
+    font-size: 40px;
+    font-family: "Montserrat";
+    color: rgb(34, 34, 34);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 12px;
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 16px;
+    font-family: 'Merriweather Sans';
+    color: rgb(119, 119, 119);
+    font-style: italic;
+    text-align: center;
+    margin: 0;
+}
+
+.services-list {
+    width: 940px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.article {
+    width: 290px;
+    padding-top: 76px;
+}
+
+.article-title {
+    font-size: 18px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    color: rgb(34, 34, 34);
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+.article-text {
+    font-size: 14px;
+    font-family: "RobotoSlab";
+    color: rgb(119, 119, 119);
+    text-align: center;
+    margin: 0;
+}
+
+.article::before {
+    content: '';
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(254, 209, 54);
+    border-radius: 50%;
+    width: 72px;
+    height: 72px;
+    transform: translateX(135%);
+    margin-bottom: 24px;
+}
+
+.basket::before {
+    background-image: url(../image/bassket.png);
+}
+
+.laptop::before {
+    background-image: url(../image/laptop.png);
+}
+
+.locked::before {
+    background-image: url(../image/locked.png);
+}
+
+.contact {
+    padding-top: 102px;
+    padding-bottom: 112px;
+    background-image: url(../image/background.png);
+    background-size: cover;
+    width: 1400px;
+}
+
+.title-contact {
+    font-size: 40px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+.subtitle-contact {
+    font-size: 16px;
+    font-family: 'Merriweather Sans';
+    color: rgb(119, 119, 119);
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 76px;
+}
+
+.form-button-contact {
+    margin: 0 auto 30px;
+    width: 940px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.form-button {
+    width: 454px;
+}
+
+.first-column {
+    margin-right: 30px;
+}
+
+.form-field {
+    display: block;
+    text-transform: uppercase;
+    width: 455px;
+    height: 52px;
+    padding: 20px;
+    margin-bottom: 30px;
+    margin-left: 0;
+    font-size: 14px;
+    border: none;
+    font-family: "Montserrat";
+    color: rgb(97, 87, 87);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-textarea {
+    height: 216px;
+    resize: none;
+}
+
+.form-field:valid {
+    outline: solid #1b6a09;
+    background-color: #afdea5;
+}
+
+.form-field:invalid {
+    outline: solid #91101a;
+    background-color: #eb9ea3;
+}
+
+.form-submit {
+    display: flex;
+    justify-content: center;
+}
+
+.form-send {
+    font-size: 18px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    width: 240px;
+    height: 66px;
+    border-radius: 3px;
+    background-color: rgb(254, 209, 54);
+}
