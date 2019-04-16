@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.site-logo {
+    display: block;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+}
+
+.header-button {
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    background: none;
+    border-radius: 20px;
+    border: 2px solid rgb(255, 255, 255, 0);
+    transition: border 200ms linear;
+    margin-bottom: 106px;
+    width: 90px;
+    height: 36px;
+}
+
+.header-button:hover {
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.top-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 540px;
+    width: 100%;
+    background: url(../images/header-mob.jpg);
+    background-size: cover;
+    padding: 20px 10px 136px 10px;
+}
+
+.section {
+    padding-top: 40px;
+    text-align: center;
+}
+
+.title {
+    font-size: 30px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+}
+
+.header-text {
+    padding: 20px;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.header-text {
+    font-size: 18px;
+    font-family: "Roboto Light";
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.find {
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-decoration: none;
+    padding: 14px 24px;
+    width: 280px;
+    height: 40px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgb(255, 78, 80);
+    border: 0;
+    transition: background-color 200ms linear;
+}
+
+.find:hover, .find:focus {
+    background-color: rgb(255, 78, 80, 0.7);
+}
+
+.main {
+    padding: 70px 28px 56px;
+}
+
+.main-section {
+    text-align: center;
+}
+
+.main-title {
+    font-size: 22px;
+    font-family: "Montserrat";
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 16px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.picture-wrapper {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+}
+
+.photo {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.icon {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.picture-wrapper::after {
+    content: '';
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    right: -5px;;
+    bottom: -5px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+}
+
+.icon-tv::after {
+    background-image: url(../images/tv.png);
+    background-color: #ff4e50;
+}
+
+.icon-bottle::after {
+    background-image: url(../images/bottle.png);
+    background-color: #ffa507;
+}
+
+.icon-cup::after {
+    background-image: url(../images/cup.png);
+    background-color: #1cd7ad;
+}
+
+.icon-telegram::after {
+    background-image: url(../images/telegram.png);
+    background-color: #4e73db;
+}
+
+.name {
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.partner-about {
+    font-size: 14px;
+    font-family: "Roboto Light";
+    color: rgb(102, 102, 102);
+    text-align: center;
+}
+
+.click {
+    border: 2px solid rgb(255, 78, 80);
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(255, 78, 80);
+    font-weight: bold;
+    text-align: center;
+    width: 280px;
+    height: 40px;
+    transition: background-color 200ms linear;
+}
+
+.click:hover, .click:focus {
+    background-color: rgb(255, 78, 80, 0.2);
+
+}
+
+@media (min-width: 768px) {
+
+.wrapper {
+    min-width: 768px;
+}
+
+.wrap {
+    min-width: 670px;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 98%;
+    margin: 0 auto;
+    padding-top: 38px;
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+.header-button {
+    margin: 0 auto;
+}
+
+.top-wrapper {
+    min-height: 700px;
+    width: 100%;
+    background: url(../images/tablet.jpg);
+    background-size: cover;
+    padding: 0;
+}
+
+.section {
+    padding-top: 116px;
+    padding-left: 19%;
+    padding-right: 19%;
+}
+
+.title {
+    margin-bottom: 40px;
+    font-size: 52px;
+}
+
+.header-text {
+    font-size: 24px;
+    margin-bottom: 34px;
+    padding: 0;
+}
+
+.main {
+    padding-top: 72px;
+    padding-left: 22%;
+    padding-right: 22%;
+    padding-bottom: 40px;
+}
+
+.article {
+    width: 35%;
+    height: auto;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 34px;
+    margin: 0;
+}
+
+.one { order: 1; }
+.two { order: 3; }
+.three { order: 2;}
+.four { order: 4; }
+
+}
+
+@media (min-width: 940px) {
+
+.wrapper {
+    min-width: 940px;
+}
+
+.top-wrapper {
+    min-height: 700px;
+    width: 100%;
+    background: url(../images/desktop.jpg);
+    background-size: cover;
+    padding: 0;
+}
+
+.main {
+    padding-bottom: 72px;
+}
+
+.section {
+    padding-top: 152px;
+    padding-left: 32%;
+    padding-right: 32%;
+}
+
+.wrap {
+    min-width: 940px;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 65%;
+    margin: 0 auto;
+    padding-top: 38px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0;
+    padding-top: 34px;
+    margin: 0;
+}
+
+.article {
+    margin-right: 10px;
+    height: auto;
+}
+
+.article:last-child {
+    margin-right: 0;
+}
+
+.main-title {
+    padding: 0;
+}
+}
