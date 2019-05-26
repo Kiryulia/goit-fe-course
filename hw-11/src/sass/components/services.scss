@@ -1,0 +1,101 @@
+.services__article {
+    width: 380px;
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
+            flex-grow: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    margin: 0;
+
+    &:nth-child(-n+3) {
+        margin-bottom: 102px;
+    }
+}
+
+.services__item {
+    margin-left: 80px;
+    position: relative;
+
+     &::before {
+        content: ('');
+        height: 32px;
+        position: absolute;
+        left: -60px;
+        display: block;
+        background-repeat: no-repeat;
+    }
+
+    &--alarm::before {
+        content: url('../images/alarm.png');
+    }
+
+    &--line::before {
+        content: url('../images/line.png');
+    }
+    
+    &--computer::before {
+        content: url('../images/computer.png');
+    }
+    
+    &--book::before {
+        content: url('../images/book.png');
+    }
+    
+    &--home::before {
+        content: url('../images/home.png');
+    }
+    
+    &--image::before {
+        content: url('../images/image.png');
+    }
+}
+
+// $icons: alarm, line, computer, book, home, image;
+
+// @include generate-pseudo-icons(
+//     'services__item--',
+//     $icons,
+//     '../images/',
+//     'png');
+
+
+.services-item__title {
+    font-family: $main-font-stack;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: $grey-color;
+}
+
+.services-item__text {
+    font-family: $secondary-font;
+    font-size: 15px;
+    color: rgb(153, 153, 153);
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+
+    .services__item--alarm::before {
+        content: url('../images/alarm@2x.png');
+    }
+    
+    .services__item--line::before {
+        content: url('../images/line@2x.png');
+    }
+    
+    .services__item--computer::before {
+        content: url('../images/computer@2x.png');
+    }
+    
+    .services__item--book::before {
+        content: url('../images/book@2x.png');
+    }
+    
+    .services__item--home::before {
+        content: url('../images/home@2x.png');
+    }
+    
+    .services__item--IMAGE::before {
+        content: url('../images/IMAGE@2x.png');
+    }
+    }
+    

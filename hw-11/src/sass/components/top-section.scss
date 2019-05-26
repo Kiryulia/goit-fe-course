@@ -1,0 +1,12 @@
+.top-section {
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    min-height: 1000px;
+    padding-bottom: 230px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .top-section {
+        background-image: url(../images/background@2x.jpg);
+    }
+}

@@ -1,0 +1,16 @@
+%link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $white-color;
+    font-size: 14px;
+    font-family: $main-font-stack;
+    font-weight: bold;
+    -webkit-transition: color 200ms linear;
+    -o-transition: color 200ms linear;
+    transition: color 200ms linear;
+}
+
+%list {
+    list-style: none;
+    color: $white-color;
+}

@@ -1,0 +1,19 @@
+.title {
+    font-family: $main-font-stack;
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: $grey-color;
+    text-transform: uppercase;
+}
+
+.title::after {
+    content: '';
+    background-color: $red-background-color;
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+    width: 60px;
+    height: 3px;
+}
